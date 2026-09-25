@@ -11,26 +11,22 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+
+
+##Peer Reviewed Articles
+
+**Waite, B.**, Yacovone, A., & Snedeker, J. (2025). Case Clozed: Young Children Can Explicitly Predict Upcoming Words in a Naturalistic, Story-based Cloze Task. *Journal of Child Language*, 1–25. doi:10.1017/S0305000925100251
+
+Yacovone, A., **Waite, B.**, Levari, T., & Snedeker, J. (2024). Let them eat ceke: An electrophysiological study of form-based prediction in rich naturalistic contexts. *Journal of Experimental Psychology: General*. https://doi.org/10.1037/xge0001677
+
+
+
+##Conference Talks
+
+**Waite, B.**, Yacovone, A., Levari, T., & Snedeker, J. (November 2025). *The development of prediction during naturalistic listening: ERP evidence for improved top-down processing with age and language ability.* Conference talk at 50th Boston University Conference on Language Development, Boston University, Boston, MA, USA.
+
+
+
 
 
 
