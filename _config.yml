@@ -31,7 +31,7 @@ author:
   location         : "Cambridge, MA"
   employer         : "Harvard University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : # none
 
   # Academic websites
   academia         : # URL
